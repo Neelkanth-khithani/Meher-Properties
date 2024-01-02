@@ -9,6 +9,16 @@ body {
 .header {
     margin-bottom: 20px;
     height: 100vh;
+    position: relative; 
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
 }
 
 .brand {
@@ -16,19 +26,21 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
+    z-index: 1; 
 }
 
 .background-image {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: center top; 
+    object-position: center top;
     filter: brightness(0.9);
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
+
 
 .semi-transparent-button {
     display: inline-block;
@@ -137,4 +149,8 @@ body {
         align-items: center;
         text-align: center;
     }
+}
+
+.about-section h3 {
+    margin-top: 0; /* Add this to remove the top margin */
 }
