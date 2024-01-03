@@ -152,5 +152,72 @@ body {
 }
 
 .about-section h3 {
-    margin-top: 0; /* Add this to remove the top margin */
+    margin-top: 0; 
+}
+
+.chat-container {
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 12px; 
+    border-radius: 8px;
+}
+
+.user {
+    background-color: #7FC7D9; 
+    color: #fff;
+    text-align: right;
+}
+
+.bot {
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px; 
+    margin: 10px;
+    background-color: #f9f9f9; 
+}
+
+#messageDropdown {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px; 
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.ask-button {
+    padding: 10px; 
+    background-color: #365486; 
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.1s ease; 
+}
+
+button:hover {
+    background-color: #000; 
+    color: #fff;
+}
+
+.chat-cont {
+    background-color: #DCF2F1;
+    padding: 10px;
 }
